@@ -4,7 +4,7 @@ A static campus room availability and booking interface built with HTML5 and CSS
 
 ## Open the pages
 
-Open the project folder in VS Code and use Live Server to open `templates\base.html`. The sidebar links connect the overview, room search, catalogue, booking request, booking history, and administration pages. `templates\admin_login.html` is also available as a standalone preview.
+Open `index.html` to start at the CampusSpace overview. The sidebar links connect the overview, room search, catalogue, booking request, booking history, and administration pages. `templates\admin_login.html` is also available as a standalone preview.
 
 You can also open any `.html` file in the `templates` folder directly in a browser. The shared stylesheet is `css\style.css`.
 
