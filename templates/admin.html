@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CampusSpace administration: review bookings and manage campus rooms.">
+  <title>Administration | CampusSpace</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="base.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V8l8-4 8 4v12M8 20v-6h8v6M9 9h.01M15 9h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>CampusSpace</a>
+      <nav aria-label="Main navigation">
+        <section class="nav-section"><p class="nav-label">Workspace</p><ul class="nav-list">
+          <li><a class="nav-link" href="base.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="4" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="4" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.7"/><rect x="4" y="14" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.7"/><rect x="14" y="14" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.7"/></svg>Overview</a></li>
+          <li><a class="nav-link" href="index.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3" stroke="currentColor" stroke-width="1.7"/><path d="m16 16 4 4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>Find a Room</a></li>
+          <li><a class="nav-link" href="room_catalogue.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 20V5.5A1.5 1.5 0 0 1 5.5 4H18a2 2 0 0 1 2 2v14H4Z" stroke="currentColor" stroke-width="1.7"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>Room Catalogue</a></li>
+          <li><a class="nav-link" href="booking.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2" stroke="currentColor" stroke-width="1.7"/><path d="M8 3v4M16 3v4M4 10h16M8 14h3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>Booking Requests</a></li>
+          <li><a class="nav-link" href="history.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.7"/><path d="M12 7v5l3 2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Booking History</a></li>
+        </ul></section>
+        <section class="nav-section"><p class="nav-label">Administration</p><ul class="nav-list"><li><a class="nav-link active" aria-current="page" href="admin.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 4 7v5c0 4.5 3.2 7.5 8 9 4.8-1.5 8-4.5 8-9V7l-8-4Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Administration</a></li><li><a class="nav-link" href="#settings"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.7"/><path d="m19 14 .7.6-1.1 1.9-1-.4-1.2.7-.2 1.1h-2.3l-.2-1.1-1.2-.7-1 .4-1.1-1.9.7-.6v-1.4l-.7-.6 1.1-1.9 1 .4 1.2-.7.2-1.1h2.3l.2 1.1 1.2.7 1-.4 1.1 1.9-.7.6v1.4Z" stroke="currentColor" stroke-width="1.35" stroke-linejoin="round"/></svg>Settings</a></li></ul></section>
+      </nav>
+      <div class="sidebar-bottom"><a class="nav-link" href="admin_login.html"><svg class="nav-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M10 17l5-5-5-5M15 12H4M14 4h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Sign out</a><p class="sidebar-note">Campus room scheduling<br>Academic year 2026–27</p></div>
+    </aside>
+    <div class="main-area">
+      <header class="topbar"><div class="breadcrumbs"><a href="base.html">CampusSpace</a><span class="crumb-divider">/</span><strong>Administration</strong></div><div class="topbar-actions"><a class="notification" href="#pending-approvals" aria-label="Notifications, four pending requests"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9ZM10 21h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg><span class="notification-dot"></span></a><div class="profile"><span class="avatar">AD</span><span class="profile-name">Room Admin</span></div></div></header>
+      <main class="page-content">
+        <section class="page-heading"><div class="page-heading-copy"><p class="eyebrow">Campus operations</p><h1>Administration</h1><p class="page-description">Review requests, maintain room records and monitor campus usage.</p></div><a class="button button-secondary" href="admin_login.html">Sign out</a></section>
+        <section class="stats-grid" aria-label="Administration summary">
+          <article class="stat"><span class="stat-label">Pending approvals</span><strong class="stat-value">04</strong><span class="stat-detail">Oldest request: 6 hours ago</span></article>
+          <article class="stat"><span class="stat-label">Approved this week</span><strong class="stat-value">27</strong><span class="stat-detail">Across 6 campus buildings</span></article>
+          <article class="stat"><span class="stat-label">Active rooms</span><strong class="stat-value">48</strong><span class="stat-detail">3 room types</span></article>
+          <article class="stat"><span class="stat-label">Rooms unavailable</span><strong class="stat-value">03</strong><span class="stat-detail">2 maintenance · 1 occupied</span></article>
+        </section>
+
+        <section class="section-panel" id="pending-approvals">
+          <header class="section-panel-header"><h2>Pending approvals</h2><span class="status status-warning">4 require review</span></header>
+          <div class="section-panel-body flush table-wrap">
+            <table>
+              <thead><tr><th>Request / applicant</th><th>Room</th><th>Date &amp; time</th><th>Purpose</th><th>Submitted</th><th>Decision</th></tr></thead>
+              <tbody>
+                <tr><td><span class="primary-cell">BKR-2026-084</span><span class="secondary-cell">Ananya Rao · Computer Science</span></td><td>S-204 · Science Block</td><td>04 Nov, 10:00–11:30</td><td>Capstone project review</td><td>Today, 08:42</td><td><div class="inline-actions"><button class="text-button" type="button">Approve</button><button class="text-button danger" type="button">Decline</button></div></td></tr>
+                <tr><td><span class="primary-cell">BKR-2026-082</span><span class="secondary-cell">Karan Shah · Engineering</span></td><td>E-211 · Engineering Block</td><td>04 Nov, 13:00–14:00</td><td>Design team meeting</td><td>Today, 08:10</td><td><div class="inline-actions"><button class="text-button" type="button">Approve</button><button class="text-button danger" type="button">Decline</button></div></td></tr>
+                <tr><td><span class="primary-cell">BKR-2026-080</span><span class="secondary-cell">Sana Iqbal · Business</span></td><td>L-12 · Central Library</td><td>05 Nov, 09:00–10:00</td><td>Group study session</td><td>Yesterday, 16:28</td><td><div class="inline-actions"><button class="text-button" type="button">Approve</button><button class="text-button danger" type="button">Decline</button></div></td></tr>
+                <tr><td><span class="primary-cell">BKR-2026-078</span><span class="secondary-cell">Arjun Das · Natural Sciences</span></td><td>S-118 · Science Block</td><td>05 Nov, 14:00–15:30</td><td>Laboratory tutorial</td><td>Yesterday, 15:04</td><td><div class="inline-actions"><button class="text-button" type="button">Approve</button><button class="text-button danger" type="button">Decline</button></div></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="pagination-note">Sample data · Approval actions are disabled in this static preview.</div>
+        </section>
+
+        <div class="content-grid admin-content-gap">
+          <section class="section-panel">
+            <header class="section-panel-header"><h2>Room directory management</h2><button class="button button-small" type="button">Add room</button></header>
+            <div class="section-panel-body flush table-wrap">
+              <table>
+                <thead><tr><th>Room</th><th>Building</th><th>Type</th><th>Capacity</th><th>State</th><th>Action</th></tr></thead>
+                <tbody>
+                  <tr><td class="primary-cell">S-204</td><td>Science Block</td><td>Seminar room</td><td>32</td><td><span class="status status-success">Active</span></td><td><button class="text-button" type="button">Edit</button></td></tr>
+                  <tr><td class="primary-cell">E-105</td><td>Engineering Block</td><td>Classroom</td><td>48</td><td><span class="status status-success">Active</span></td><td><button class="text-button" type="button">Edit</button></td></tr>
+                  <tr><td class="primary-cell">S-118</td><td>Science Block</td><td>Laboratory</td><td>24</td><td><span class="status status-neutral">Maintenance</span></td><td><button class="text-button" type="button">Edit</button></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="pagination-note"><a class="section-link" href="room_catalogue.html">View full room catalogue →</a></div>
+          </section>
+          <section class="section-panel">
+            <header class="section-panel-header"><h2>Room status overview</h2></header>
+            <div class="section-panel-body">
+              <div class="availability-list">
+                <div class="availability-row"><div><span class="availability-room">Available</span><span class="availability-meta">Ready for new bookings</span></div><strong class="primary-cell">31</strong></div>
+                <div class="availability-row"><div><span class="availability-room">Occupied</span><span class="availability-meta">Currently in use</span></div><strong class="primary-cell">14</strong></div>
+                <div class="availability-row"><div><span class="availability-room">Maintenance</span><span class="availability-meta">Temporarily unavailable</span></div><strong class="primary-cell">03</strong></div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="section-panel settings-panel" id="settings">
+          <header class="section-panel-header"><h2>System settings</h2><span class="table-meta">Read-only preview</span></header>
+          <div class="section-panel-body"><p class="page-description">Campus booking hours: Monday–Friday, 08:00–18:00 · Default request review: 1 business day · Academic year: 2026–27</p></div>
+        </section>
+        <footer class="footer">CampusSpace · Administration workspace</footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

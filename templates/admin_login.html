@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Administrator sign in for CampusSpace room management.">
+  <title>Administrator Sign In | CampusSpace</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <main class="login-page">
+    <aside class="login-aside">
+      <a class="brand" href="base.html"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M4 20V8l8-4 8 4v12M8 20v-6h8v6M9 9h.01M15 9h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>CampusSpace</a>
+      <div class="login-aside-copy"><p class="eyebrow login-eyebrow">Campus operations</p><h2>Room management, made clear.</h2><p>Review campus bookings and keep learning spaces organized from one workspace.</p></div>
+      <p class="login-footnote">CampusSpace · University room scheduling</p>
+    </aside>
+    <section class="login-main">
+      <div class="login-form-wrap">
+        <p class="eyebrow">Administrator access</p>
+        <h1>Sign in</h1>
+        <p class="page-description">Use your university administrator account to continue.</p>
+        <form action="admin.html" method="get">
+          <div class="field"><label for="admin-email">College email</label><input id="admin-email" name="email" type="email" autocomplete="username" placeholder="admin@university.edu" required></div>
+          <div class="field"><label for="admin-password">Password</label><input id="admin-password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required></div>
+          <button type="button" class="button">Sign in</button>
+        </form>
+        <p class="helper-text login-help">Static preview only. Authentication is not connected.</p>
+        <p class="helper-text"><a href="base.html">← Return to CampusSpace overview</a></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+       
